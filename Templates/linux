@@ -1,0 +1,17 @@
+# Create file
+touch demo.txt
+
+# Add text
+echo "Hello OS Lab" > demo.txt
+
+# Append text
+echo "Adding a new line" >> demo.txt
+
+# Copy file to Desktop
+cp demo.txt ~/Desktop/
+
+# Display content
+cat ~/Desktop/demo.txt
+
+# Remove file
+rm demo.txt

@@ -1,0 +1,68 @@
+sum of 2:
+Here is the text in the image with spaces added:
+echo "Enter two numbers"
+read a
+read b
+sum='expr $a + $b'
+echo "The sum is $sum"
+
+sub of 2:
+echo "enter two numbers"
+read a b
+sub='expr $a - $b'
+echo "the subraction is $sub"
+
+mul of 2:
+echo "enter two numbers"
+read a b
+mul='expr $a \* $b'
+echo "the multiplication is $mul"
+
+great of 3:
+echo "Enter three values" 
+read a b c
+if [ $a -gt $b -a $a -gt $c ] 
+then
+echo "$a is greatest" 
+else
+if [ $b -gt $c ] 
+then
+echo "$b is greatest"
+ else
+echo "$c is greatest" 
+fi
+fi
+
+concat:
+echo "enter 2 strings:"
+read a b
+c=$a$b
+echo "concatination of two strings is $c"
+
+fact:
+echo "enter a number"
+read a
+fact=1
+while [ $a -gt 1 ]
+do
+fact=$(($fact * a))
+a=$(($a-1))
+done
+echo "the factorial of given number is $fact"
+
+fab:
+echo "Enter the number of terms"
+read N
+a=0
+b=1
+echo "The Fibonacci series is: "
+i=0
+while [ $i -lt $N ]
+do
+echo -n "$a "
+fn=$((a + b))
+a=$b
+b=$fn
+i=$(((i + 1)))
+done
+echo

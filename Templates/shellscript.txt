@@ -1,0 +1,17 @@
+#!/bin/bash
+# menu.sh – simple file menu
+
+echo "---- Simple Menu ----"
+echo "1. Display file"
+echo "2. Copy file"
+echo "3. Delete file"
+echo "4. Exit"
+read -p "Enter your choice: " ch
+
+case $ch in
+1) read -p "Enter filename: " f; cat $f ;;
+2) read -p "Enter source: " s; read -p "Enter destination: " d; cp $s $d ;;
+3) read -p "Enter filename: " f; rm -i $f ;;
+4) exit ;;
+*) echo "Invalid choice!" ;;
+esac
